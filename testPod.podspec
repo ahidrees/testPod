@@ -38,8 +38,10 @@ s.source = { :git => "https://github.com/ahidrees/testPod.git", :tag => "#{s.ver
 s.framework = "UIKit"
 
 # 8
-s.source_files = "testPod/**/*.{ObjC}"
+s.source_files = 'testPod/**/*'
 
 # 9
-s.resources = "testPod/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resource_bundles = {
+'testPod' => ['testPod/Assets/*.{png,xib,strings}']
+}
 end
